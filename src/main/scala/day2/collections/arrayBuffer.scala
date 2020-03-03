@@ -1,4 +1,4 @@
-package day2.lists
+package day2.collections
 
 object arrayBuffer extends App {
 
