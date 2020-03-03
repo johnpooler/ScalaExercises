@@ -1,4 +1,4 @@
-package day2.collections
+package day2.collections.basics
 
 object list1 extends App {
 

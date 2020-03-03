@@ -1,4 +1,4 @@
-package day2.collections
+package day2.collections.basics
 
 object map1 extends App {
 
