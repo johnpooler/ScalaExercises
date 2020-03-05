@@ -1,13 +1,13 @@
 package day4
 
-object LuhnCheck extends App {
+object LuhnCheck {
 
-  def checkLuhn(cardNumber: String): Boolean = {
+  def checkDigits(cardNumber: String): Unit= {
     val nDigits = cardNumber.length
     var nSum = 0
     var isSecond = false
 
-    for (i <- nDigits - 1 to 0 by -1) {
+    for (i <- (nDigits - 1) to 0 by -1) {
       var d = cardNumber.charAt(i) - '0'
       if (isSecond == true) d = d * 2
       // We add two digits to handle cases that make two digits after doubling
@@ -15,16 +15,20 @@ object LuhnCheck extends App {
       nSum += d % 10
       isSecond = !isSecond
     }
-    nSum % 10 == 0
+    if(nSum % 10 == 0) println("valid cardnumber")
+    else println("invalid cardnumber")
+
   }
 
-  println(checkLuhn("79927398713"))
 
-  println(checkLuhn("1111111"))
+ def main(args: Array[String] ): Unit = {
 
-  println(checkLuhn("11111111"))
+   checkDigits("79927398713")
+   checkDigits("1111111")
+   checkDigits("11111111")
+   checkDigits("1040")
+   checkDigits("49927398716")
 
-  println(checkLuhn("1091"))
-
-
+  }
 }
+
