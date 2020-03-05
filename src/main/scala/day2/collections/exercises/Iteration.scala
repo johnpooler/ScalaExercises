@@ -12,26 +12,20 @@ object Iteration extends App {
 
   }
 
-  def iter2(A: String, B: Int): Unit = {
-    var input :String=A
-    var numero:Int=B
-    var line :String=""
-
-    for(i<-1 to numero
+  def iter2(input: String, numero: Int): Any = {
 
 
+    for(i<-1 to numero){
 
-        )
-      println(input)
-    line+=input
-
+      for(j<-1 to numero){
+        print(input)
+      }
+      println()
+    }
 
   }
 
-
-iter2("poncho", 4)
-
- iter1("hi", 6)
-
+  iter1("hi", 6)
+  iter2("poncho", 3)
 
 }
