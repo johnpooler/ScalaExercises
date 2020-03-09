@@ -21,36 +21,11 @@ object Iteration extends App {
         print(input)
       }
       println()
-
     }
-
-  }
-
-  def iter2recursive(input:String, number:Integer):Unit={
-
-  if (number==0) {}
-  else
-    (println(input,number-1)
-
 
   }
 
   iter1("hi", 6)
   iter2("poncho", 3)
-  iter2recursive("H", 5)
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
