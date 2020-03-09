@@ -27,8 +27,7 @@ object Main extends App {
 
 
   def aCar :String={
-    "jdbvoi"
-    6*5
+
     "jeff"
 
 

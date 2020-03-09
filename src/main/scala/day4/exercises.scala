@@ -1,5 +1,5 @@
 package day4
-import
+
 
 object exercises extends App {
 
