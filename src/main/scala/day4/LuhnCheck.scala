@@ -28,6 +28,7 @@ object LuhnCheck {
    checkDigits("11111111")
    checkDigits("1040")
    checkDigits("49927398716")
+   checkDigits("4998716")
 
   }
 }
